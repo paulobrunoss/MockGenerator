@@ -1,0 +1,48 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/Mock/GetMock/{resto}",
+      "UpstreamPathTemplate": "/api/{resto}",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 49412
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Mock/PostMock/{resto}",
+      "UpstreamPathTemplate": "/api/{resto}",
+      "UpstreamHttpMethod": [
+        "Post"
+      ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 49412
+        }
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Mock/PutMock/{resto}",
+      "UpstreamPathTemplate": "/api/{resto}",
+      "UpstreamHttpMethod": [
+        "Put"
+      ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 49412
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+  }
+}
